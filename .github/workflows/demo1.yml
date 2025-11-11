@@ -1,3 +1,8 @@
-file_to_print: /path/to/your/document.txt
-printer_name: my_default_printer
-copies: 1
+name: hello-world
+'on': push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
